@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>GitHub</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="" class="nav-brand">GitHub API</a>
+      <ul>
+        <li class="nav-item"><a href="about.html">Про нас</a></li>
+        <li>
+          <a href="" class="nav-item btn btn-default">Регістрація</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container" id="main">
+      <h1>GitHub репозиторії</h1>
+      <form id="repos-form">
+        <label for="github-username"
+          >Введіть ім'я користувача та отримайте його репозиторії</label
+        >
+        <input id="github-username" type="text" placeholder="GitHub username" />
+        <button type="submit" id="get-repos" class="btn btn-default">
+          Get repos
+        </button>
+      </form>
+      <ul id="repos-list"></ul>
+    </div>
+
+    <footer id="footer-wrapper">
+      <a href="about.html" target="_blank">Про нас</a>
+      <a href="contact.html" target="_blank">Контакти</a>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
